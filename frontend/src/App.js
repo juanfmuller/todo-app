@@ -168,7 +168,7 @@ class App extends React.Component {
               return(
                 <div key={index} className="task-wrapper flex-wrapper">
                   <div onClick={() => self.strikeUnstrike(task)} style={{flex:7}}>
-                    {task.completed == false ? (
+                    {task.completed === false ? (
                       <span>{task.title}</span>
                     ) : (
                       <strike>{task.title}</strike>
